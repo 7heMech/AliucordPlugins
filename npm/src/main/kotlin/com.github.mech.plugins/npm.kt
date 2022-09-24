@@ -63,7 +63,7 @@ ${pkg.getString("description")}
                                             .setTitle(pkg.getString("name"))
                                             .setUrl(pkg.getJSONObject("links").getString("npm"))
                                             .setDescription(
-                                                    "${pkg.getString("description")}\n\n**Weekly Downloads**: `${downloads}`\n**Version**: `${pkg.getString("version")}`}`"
+                                                    "${pkg.getString("description")}\n\n**Weekly Downloads**: `${downloads}`\n**Version**: `${pkg.getString("version")}`"
                                             )
                                             .build()
                             )
