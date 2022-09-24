@@ -1,4 +1,4 @@
-version = "1.1.1" // Plugin version. Increment this to trigger the updater
+version = "1.1.2" // Plugin version. Increment this to trigger the updater
 description = "Find npm packages" // Plugin description that will be shown to user
 
 aliucord {

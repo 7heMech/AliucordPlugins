@@ -50,8 +50,9 @@ class npm : Plugin() {
 >>> **${pkg.getString("name")}**
 ${pkg.getString("description")}
 
-**Weekly Downloads**: `${downloads}`
 **Version**: `${pkg.getString("version")}`
+
+**Weekly Downloads**: `${downloads}`
 
 <${pkg.getJSONObject("links").getString("npm")}>
 """
@@ -63,7 +64,7 @@ ${pkg.getString("description")}
                                             .setTitle(pkg.getString("name"))
                                             .setUrl(pkg.getJSONObject("links").getString("npm"))
                                             .setDescription(
-                                                    "${pkg.getString("description")}\n\n**Weekly Downloads**: `${downloads}`\n**Version**: `${pkg.getString("version")}`"
+                                                    "${pkg.getString("description")}\n\n**Version**: `${pkg.getString("version")}`\n\n**Weekly Downloads**: `${downloads}`"
                                             )
                                             .build()
                             )
